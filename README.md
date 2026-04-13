@@ -73,8 +73,8 @@ A closed feedback loop — not just execution, but continuous improvement.
 
 | Component | Role |
 |----------|------|
-| [QuantMetrics OS](https://github.com/roelofgootjesgit/quantmetrics_os) | Orchestration — process control, environment setup, multi-repo coordination |
-| [QuantBuild E1](https://github.com/roelofgootjesgit/quantbuildE1) | Strategy engine — signal generation, regime detection, portfolio logic |
+| [QuantOS](https://github.com/roelofgootjesgit/quantmetrics_os) | Orchestration — process control, environment setup, multi-repo coordination |
+| [QuantBuild](https://github.com/roelofgootjesgit/quantbuildE1) | Strategy engine — signal generation, regime detection, portfolio logic |
 | [QuantBridge](https://github.com/roelofgootjesgit/quantBridge-v.1) | Execution layer — broker abstraction, order routing, prop firm risk control |
 | [QuantLog](https://github.com/roelofgootjesgit/quantlog-v.1) | Observability — event logging, trace replay, system validation |
 
