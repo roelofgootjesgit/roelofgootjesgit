@@ -142,7 +142,12 @@ QuantMetrics is built for:
 - traders who want to validate real edge  
 - developers building trading systems  
 - prop firm automation setups  
-- multi-account trading infrastructure  
+- multi-account trading infrastructure
+
+## Development
+
+Built using a modern AI-assisted workflow
+to accelerate iteration and system design.
 
 ---
 
