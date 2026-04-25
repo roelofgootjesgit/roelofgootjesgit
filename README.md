@@ -1,168 +1,147 @@
-# Roelof Gootjes
+Roelof Gootjes
 
-“I build deterministic, event-driven systems that turn complex decision pipelines into measurable, reproducible outcomes.”
+Backend / Data / FinTech Systems Engineer
 
----
+I build deterministic, event-driven systems
+that turn complex decision pipelines into measurable and reproducible outcomes.
 
-## QuantMetrics Suite
+QuantMetrics Suite
 
-Most trading systems fail for one reason:
-they cannot prove their edge under real conditions.
+Most trading systems don’t fail because of bad ideas —
+they fail because they cannot prove them under real conditions.
 
-QuantMetrics is a modular, event-driven trading infrastructure
-that turns strategy ideas into measurable, testable, and reproducible systems.
+QuantMetrics is a modular trading infrastructure
+that turns strategy ideas into testable, traceable, and verifiable systems.
 
 It enables you to:
 
-validate decisions under live constraints
-execute trades through controlled layers
-capture every event in an auditable trail
+validate decisions under real execution constraints
+execute trades through controlled, broker-agnostic layers
+capture every step in an auditable event trail
 analyze exactly where performance is gained or lost
 
 This is not a trading bot.
 This is infrastructure for building, testing, and proving decision systems.
 
----
-
-## Core Principle
+Core Principle
 
 Edge = Model Probability – Market Probability
 
-The system exists to measure, validate and execute this edge.
+The system exists to measure, validate, and execute this edge —
+not assume it.
 
----
+What This Solves
 
-## What This Solves
-
-Most traders have strategies.  
+Most traders have strategies.
 Almost none have infrastructure.
 
 This leads to:
-- inconsistent execution
-- hidden risk exposure
-- no reliable performance tracking
-- inability to validate edge
+
+inconsistent execution
+hidden risk exposure
+lack of reliable performance tracking
+inability to validate real edge
 
 QuantMetrics solves this by enforcing:
 
-- deterministic execution  
-- centralized risk control  
-- full decision traceability  
-- reproducible backtesting via event replay  
-
----
-
-## System Architecture
+deterministic execution
+centralized risk control
+full decision traceability
+reproducible analysis via event replay
+System Architecture
 Market Data / News
-↓
+        ↓
 Signal Engine (QuantBuild)
-↓
+        ↓
 Risk Engine
-↓
+        ↓
 Execution Engine (QuantBridge)
-↓
+        ↓
 Broker / Trades
-↓
+        ↓
 Event Logging (QuantLog)
-↓
+        ↓
 Analytics / Evaluation
-↓
+        ↓
 Strategy Improvement Loop
 
+A closed feedback loop — not just execution, but continuous system validation and improvement.
 
-A closed feedback loop — not just execution, but continuous improvement.
-
----
-
-## Components
-
-| Component | Role |
-|----------|------|
-| [QuantOS](https://github.com/roelofgootjesgit/quantmetrics_os) | Orchestration — process control, environment setup, multi-repo coordination |
-| [QuantBuild](https://github.com/roelofgootjesgit/quantbuildE1) | Strategy engine — signal generation, regime detection, portfolio logic |
-| [QuantBridge](https://github.com/roelofgootjesgit/quantBridge-v.1) | Execution layer — broker abstraction, order routing, prop firm risk control |
-| [QuantLog](https://github.com/roelofgootjesgit/quantlog-v.1) | Observability — event logging, trace replay, system validation |
+Components
+Component	Role
+QuantOS
+	Orchestration — process control, environment setup, multi-repo coordination
+QuantBuild
+	Strategy engine — signal generation, regime detection, portfolio logic
+QuantBridge
+	Execution layer — broker abstraction, order routing, risk enforcement
+QuantLog
+	Observability — event logging, trace replay, system validation
 
 Each component is fully decoupled and independently testable.
 
----
+What This Demonstrates
+Event-driven system design
+Clear separation of concerns (decision / execution / logging / analysis)
+Deterministic and reproducible pipelines
+Observability through structured event logging
+Real-world system thinking (risk, execution constraints, failure handling)
+Ability to design and manage complex multi-component systems
+Design Principles
+Strategy logic contains zero broker API calls
+Execution is fully broker-agnostic
+Risk is centralized and enforced system-wide
+All behavior is traceable through event logs
+Systems are deterministic and reproducible
+Infrastructure first, strategy second
+Stack
 
-## Design Principles
+Core
+Python · Pydantic · PyYAML · dotenv
 
-- Strategy code contains zero broker API calls  
-- Execution is broker-agnostic via adapter layer  
-- Risk is centralized — not duplicated per strategy  
-- Full trace replay from raw event logs  
-- Deterministic system behavior  
-- Built for multi-account and prop environments  
-- Infrastructure first, strategy second  
+Data & Storage
+Pandas · NumPy · PyArrow · Parquet · JSONL
 
----
+Execution & Market Data
+cTrader Open API · Oanda v20 · Dukascopy · yfinance
 
-## Stack
+Observability & Analytics
+Streamlit · Telegram · Matplotlib
 
-**Core**  
-Python 3.10 · Pydantic v2 · PyYAML · dotenv · filelock  
+Testing
+pytest · contract validation
 
-**Data & Storage**  
-Pandas · NumPy · PyArrow · Parquet · JSONL  
+Deployment
+Linux VPS · systemd · cron
 
-**Market Data**  
-Dukascopy · Oanda v20 · yfinance · ictrader
-
-**Execution**  
-cTrader Open API · Oanda v20  API
-
-**News & Sentiment**  
-RSS · httpx · OpenAI  
-
-**Observability**  
-Streamlit · Telegram · Matplotlib  
-
-**Testing**  
-pytest · contract validation  
-
-**Deployment**  
-Linux VPS · systemd · cron  
-
----
-
-## Status
+Status
 
 Currently running in:
 
-- paper trading
-- dry-run environments
-- live infrastructure testing phase
+paper trading
+dry-run environments
+live infrastructure testing
 
 Next step:
-→ full live deployment + multi-account scaling
 
----
+→ full live deployment and multi-account scaling
 
-## For Builders & Traders
+For Companies & Collaborators
 
-QuantMetrics is built for:
+This system is relevant for:
 
-- traders who want to validate real edge  
-- developers building trading systems  
-- prop firm automation setups  
-- multi-account trading infrastructure
+trading infrastructure development
+financial data pipelines
+decision system validation
+backend systems with auditability requirements
+event-driven architectures in production environments
+Contact
 
-## Development
-
-Built using a modern AI-assisted workflow
-to accelerate iteration and system design.
-
----
-
-## Contact / Work
-
-Building in public.  
+Building in public.
 Available for:
 
-- custom trading infrastructure  
-- strategy validation systems  
-- execution & risk pipelines  
+backend / data engineering roles
+fintech infrastructure projects
+system design and automation
 
 GitHub: https://github.com/roelofgootjesgit
