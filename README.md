@@ -1,21 +1,26 @@
 # Roelof Gootjes
 
-Python developer. Trading systems architect.  
-Building deterministic trading infrastructure.
+“I build deterministic, event-driven systems that turn complex decision pipelines into measurable, reproducible outcomes.”
 
 ---
 
 ## QuantMetrics Suite
 
-Most trading systems fail for one reason:  
-they cannot prove their edge in live conditions.
+Most trading systems fail for one reason:
+they cannot prove their edge under real conditions.
 
-QuantMetrics is a modular trading infrastructure  
-designed to validate, execute and monitor strategies  
-with institutional-grade control.
+QuantMetrics is a modular, event-driven trading infrastructure
+that turns strategy ideas into measurable, testable, and reproducible systems.
 
-This is not a trading bot.  
-This is a full trading system stack.
+It enables you to:
+
+validate decisions under live constraints
+execute trades through controlled layers
+capture every event in an auditable trail
+analyze exactly where performance is gained or lost
+
+This is not a trading bot.
+This is infrastructure for building, testing, and proving decision systems.
 
 ---
 
